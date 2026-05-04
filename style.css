@@ -321,9 +321,62 @@ section {
     color: #c4c4c4;
 }
 
+/* ===== Experience Section ===== */
+.experience {
+    background-color: var(--second-bg-color);
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.experience-card {
+    background-color: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.experience-card:hover {
+    border-color: var(--main-color);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 171, 240, 0.3);
+}
+
+.exp-icon {
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.exp-info p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #c4c4c4;
+    margin-bottom: 12px;
+}
+
+.exp-info p strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
 /* ===== Skills Section ===== */
 .skills {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .skills-grid {
@@ -334,7 +387,7 @@ section {
 }
 
 .skill-card {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     padding: 30px 20px;
     border-radius: 12px;
     text-align: center;
@@ -361,7 +414,7 @@ section {
 
 /* ===== Projects Section ===== */
 .projects {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .projects-grid {
@@ -372,7 +425,7 @@ section {
 }
 
 .project-card {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     padding: 35px 30px;
     border-radius: 15px;
     border: 2px solid transparent;
@@ -405,7 +458,7 @@ section {
 
 /* ===== Achievements Section ===== */
 .achievements {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .achievements-grid {
@@ -416,7 +469,7 @@ section {
 }
 
 .achievement-card {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     padding: 35px 30px;
     border-radius: 15px;
     border: 2px solid transparent;
@@ -449,7 +502,7 @@ section {
 
 /* ===== Contact Section ===== */
 .contact {
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .contact-grid {
@@ -460,7 +513,7 @@ section {
 }
 
 .contact-card {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     padding: 40px 30px;
     border-radius: 15px;
     text-align: center;
@@ -592,7 +645,8 @@ footer p {
     .projects-grid,
     .achievements-grid,
     .contact-grid,
-    .education-grid {
+    .education-grid,
+    .experience-grid {
         grid-template-columns: 1fr;
     }
 }
